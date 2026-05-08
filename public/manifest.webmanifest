@@ -1,0 +1,39 @@
+{
+  "name": "PlanoCerto — Planos de Saúde MEI",
+  "short_name": "PlanoCerto",
+  "description": "Compare planos de saúde para MEI e autônomos brasileiros. Gratuito e rápido.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1f6feb",
+  "categories": ["health", "finance", "productivity"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Buscar Planos",
+      "short_name": "Buscar",
+      "description": "Buscar planos por preço",
+      "url": "/buscar",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Plano Ideal",
+      "short_name": "Ideal",
+      "description": "Encontrar plano ideal",
+      "url": "/recomendar",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Favoritos",
+      "short_name": "Favoritos",
+      "description": "Ver planos favoritos",
+      "url": "/favoritos",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

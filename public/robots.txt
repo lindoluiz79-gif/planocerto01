@@ -1,0 +1,33 @@
+# robots.txt para PlanoCerto
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://planocerto.com.br/sitemap.xml
+
+# Páginas importantes
+Allow: /buscar
+Allow: /recomendar
+Allow: /comparar
+Allow: /blog
+Allow: /faq
+Allow: /glossario
+
+# Páginas privadas
+Disallow: /dashboard
+Disallow: /login
+Disallow: /signup
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Específico para bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
