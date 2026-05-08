@@ -32,3 +32,6 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Ignore PlanoCerto01 directory (submodule issue)
+PlanoCerto01/
