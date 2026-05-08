@@ -12,3 +12,6 @@ export function createRouter() {
     defaultPreloadStaleTime: 0,
   });
 }
+
+// TanStack Start also needs getRouter for SSR hydration
+export const getRouter = createRouter;
