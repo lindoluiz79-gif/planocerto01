@@ -1,0 +1,161 @@
+═══════════════════════════════════════════════════════════════════════════════
+  🚀 CRIAR REPOSITÓRIO NO GITHUB - PASSO A PASSO VISUAL
+═══════════════════════════════════════════════════════════════════════════════
+
+⚠️  O REPOSITÓRIO AINDA NÃO FOI CRIADO!
+
+Por quê? Porque EU NÃO CONSIGO fazer login por você (precisa do navegador).
+
+═══════════════════════════════════════════════════════════════════════════════
+  ✅ SOLUÇÃO MAIS FÁCIL: GITHUB DESKTOP
+═══════════════════════════════════════════════════════════════════════════════
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  PASSO 1: BAIXAR GITHUB DESKTOP (1 minuto)                               │
+├───────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  1. Abra o navegador                                                      │
+│  2. Acesse: https://desktop.github.com                                    │
+│  3. Clique em "Download for Windows"                                      │
+│  4. Instale o programa (Next, Next, Install)                              │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  PASSO 2: FAZER LOGIN (30 segundos)                                      │
+├───────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  1. Abra o GitHub Desktop                                                 │
+│  2. Clique em "Sign in to GitHub.com"                                     │
+│  3. Vai abrir o navegador                                                 │
+│  4. Faça login com seu usuário e senha                                    │
+│  5. Clique em "Authorize desktop"                                         │
+│  6. Volte para o GitHub Desktop                                           │
+│                                                                           │
+│  ✅ Login feito!                                                          │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  PASSO 3: ADICIONAR REPOSITÓRIO LOCAL (30 segundos)                      │
+├───────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  1. No GitHub Desktop, clique em "File" (menu superior)                   │
+│  2. Clique em "Add Local Repository..."                                   │
+│  3. Clique em "Choose..." (botão azul)                                    │
+│  4. Navegue até esta pasta:                                               │
+│                                                                           │
+│     C:\Users\vivi_\Downloads\planocerto-source (1)                        │
+│                                                                           │
+│  5. Clique em "Selecionar pasta"                                          │
+│  6. Clique em "Add Repository"                                            │
+│                                                                           │
+│  ✅ Repositório local adicionado!                                         │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  PASSO 4: PUBLICAR NO GITHUB (30 segundos)                               │
+├───────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  1. Você verá um botão azul "Publish repository" no topo                  │
+│  2. Clique nele                                                           │
+│  3. Uma janela vai abrir com:                                             │
+│                                                                           │
+│     Name: planocerto-source (1)                                           │
+│     ↓ MUDE PARA: PlanoCerto01                                             │
+│                                                                           │
+│     Description: (opcional)                                               │
+│     ↓ Digite: Plataforma de comparação de planos de saúde                │
+│                                                                           │
+│     ☐ Keep this code private                                              │
+│     ↓ DESMARQUE esta opção (para ser público)                             │
+│                                                                           │
+│  4. Clique em "Publish repository"                                        │
+│  5. Aguarde o upload (pode demorar 1-2 minutos)                           │
+│                                                                           │
+│  ✅ PRONTO! Repositório criado!                                           │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  PASSO 5: VERIFICAR NO GITHUB (10 segundos)                              │
+├───────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  1. Abra o navegador                                                      │
+│  2. Acesse: https://github.com/SEU-USUARIO                                │
+│  3. Você verá o repositório "PlanoCerto01"                                │
+│  4. Clique nele                                                           │
+│  5. Você verá:                                                            │
+│     ✅ 202 arquivos                                                       │
+│     ✅ 4 commits                                                          │
+│     ✅ Todo o código                                                      │
+│                                                                           │
+│  🎉 SUCESSO!                                                              │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+  🚀 PRÓXIMO PASSO: DEPLOY NO VERCEL
+═══════════════════════════════════════════════════════════════════════════════
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│  DEPLOY NO VERCEL (3 minutos)                                            │
+├───────────────────────────────────────────────────────────────────────────┤
+│                                                                           │
+│  1. Acesse: https://vercel.com                                            │
+│  2. Clique em "Sign up"                                                   │
+│  3. Clique em "Continue with GitHub"                                      │
+│  4. Autorize o Vercel                                                     │
+│  5. Clique em "New Project"                                               │
+│  6. Procure "PlanoCerto01"                                                │
+│  7. Clique em "Import"                                                    │
+│  8. Configure:                                                            │
+│     - Framework Preset: Vite                                              │
+│     - Build Command: npm run build                                        │
+│     - Output Directory: dist/client                                       │
+│  9. Clique em "Deploy"                                                    │
+│  10. Aguarde 2-3 minutos                                                  │
+│                                                                           │
+│  🎉 SITE NO AR!                                                           │
+│                                                                           │
+│  URL: https://planocerto01.vercel.app                                     │
+│                                                                           │
+└───────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+  ⏱️ TEMPO TOTAL
+═══════════════════════════════════════════════════════════════════════════════
+
+  Baixar GitHub Desktop:     1 minuto
+  Fazer login:               30 segundos
+  Adicionar repositório:     30 segundos
+  Publicar:                  30 segundos
+  Deploy no Vercel:          3 minutos
+  ─────────────────────────────────────
+  TOTAL:                     5 minutos 30 segundos
+
+═══════════════════════════════════════════════════════════════════════════════
+  📞 LINKS IMPORTANTES
+═══════════════════════════════════════════════════════════════════════════════
+
+  GitHub Desktop:    https://desktop.github.com
+  Seu GitHub:        https://github.com/SEU-USUARIO
+  Vercel:            https://vercel.com
+
+═══════════════════════════════════════════════════════════════════════════════
+  💡 DICA
+═══════════════════════════════════════════════════════════════════════════════
+
+  Use GitHub Desktop! É MUITO mais fácil que linha de comando!
+
+  ✅ Interface visual
+  ✅ Sem comandos complicados
+  ✅ Feito pelo GitHub (oficial)
+  ✅ Funciona sempre
+
+═══════════════════════════════════════════════════════════════════════════════
+
+  🚀 COMECE AGORA: https://desktop.github.com
+
+═══════════════════════════════════════════════════════════════════════════════
