@@ -1,0 +1,107 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║              🔧 CONFIGURAÇÃO FINAL DO CLOUDFLARE PAGES 🔧                    ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+⚠️  IMPORTANTE: VOCÊ PRECISA MUDAR A CONFIGURAÇÃO NO CLOUDFLARE!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 PASSO A PASSO (FAÇA EXATAMENTE ASSIM):
+
+  1️⃣  NO CLOUDFLARE PAGES, vá até o projeto "planocerto"
+
+  2️⃣  Clique em "Settings" (menu lateral)
+
+  3️⃣  Clique em "Builds & deployments"
+
+  4️⃣  Role até "Build configurations"
+
+  5️⃣  Clique em "Edit configurations"
+
+  6️⃣  MUDE O BUILD COMMAND PARA:
+
+      npm install --legacy-peer-deps && npm run build
+
+  7️⃣  Mantenha o resto:
+      - Build output directory: dist/client
+      - Root directory: (vazio)
+
+  8️⃣  Em "Environment variables", adicione:
+      - NODE_VERSION = 18
+      - NPM_FLAGS = --legacy-peer-deps
+
+  9️⃣  Clique em "Save"
+
+  🔟  Volte para "Deployments"
+
+  1️⃣1️⃣  Clique em "Retry deployment"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 CONFIGURAÇÃO COMPLETA:
+
+  ╔════════════════════════════════════════════════════════════════╗
+  ║ Build command:                                                 ║
+  ║ npm install --legacy-peer-deps && npm run build                ║
+  ╠════════════════════════════════════════════════════════════════╣
+  ║ Build output directory:                                        ║
+  ║ dist/client                                                    ║
+  ╠════════════════════════════════════════════════════════════════╣
+  ║ Root directory:                                                ║
+  ║ (deixe vazio)                                                  ║
+  ╠════════════════════════════════════════════════════════════════╣
+  ║ Environment variables:                                         ║
+  ║ NODE_VERSION = 18                                              ║
+  ║ NPM_FLAGS = --legacy-peer-deps                                 ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 POR QUE ISSO É NECESSÁRIO:
+
+  O npm install está falhando porque há conflitos de peer dependencies
+  entre as versões do Vite, TanStack Start e outras bibliotecas.
+  
+  O flag --legacy-peer-deps faz o npm ignorar esses conflitos e
+  instalar as dependências mesmo assim.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ O QUE JÁ FOI RESOLVIDO:
+
+  ✅ Erro do submódulo PlanoCerto01
+  ✅ Tailwind config criado
+  ✅ Build local funcionando
+  ✅ Arquivo .npmrc criado
+  ✅ wrangler.toml atualizado
+  ✅ Script build.sh criado
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  ATENÇÃO:
+
+  Apenas clicar em "Retry deployment" NÃO VAI FUNCIONAR!
+  
+  Você PRECISA mudar o build command nas configurações primeiro!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 RESUMO:
+
+  1. Settings → Builds & deployments → Edit configurations
+  2. Build command: npm install --legacy-peer-deps && npm run build
+  3. Environment variables: NODE_VERSION=18, NPM_FLAGS=--legacy-peer-deps
+  4. Save
+  5. Deployments → Retry deployment
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 DEPOIS DISSO, O DEPLOY VAI FUNCIONAR!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Data: 08/05/2026
+Status: ⏳ Aguardando configuração no Cloudflare
+Commits: 9 correções aplicadas
