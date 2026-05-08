@@ -1,0 +1,78 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                  🔄 MUDANÇA IMPORTANTE: NPM → YARN 🔄                        ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+💡 NOVA ESTRATÉGIA:
+
+  O npm estava falhando constantemente com conflitos de peer dependencies.
+  
+  Agora estamos usando YARN, que tem melhor resolução de dependências!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 CONFIGURAÇÃO ATUALIZADA NO CLOUDFLARE:
+
+  ⚠️  VOCÊ PRECISA MUDAR O BUILD COMMAND NOVAMENTE!
+
+  1️⃣  Settings → Builds & deployments → Edit configurations
+
+  2️⃣  Build command: yarn install && yarn build
+
+  3️⃣  Build output directory: dist/client
+
+  4️⃣  Environment variables:
+      - NODE_VERSION = 18
+
+  5️⃣  Save
+
+  6️⃣  Deployments → Retry deployment
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 CONFIGURAÇÃO COMPLETA:
+
+  ╔════════════════════════════════════════════════════════════════╗
+  ║ Build command:                                                 ║
+  ║ yarn install && yarn build                                     ║
+  ╠════════════════════════════════════════════════════════════════╣
+  ║ Build output directory:                                        ║
+  ║ dist/client                                                    ║
+  ╠════════════════════════════════════════════════════════════════╣
+  ║ Environment variables:                                         ║
+  ║ NODE_VERSION = 18                                              ║
+  ╚════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ POR QUE YARN É MELHOR:
+
+  ✅ Melhor resolução de dependências
+  ✅ Mais rápido que npm
+  ✅ Menos conflitos de peer dependencies
+  ✅ Usado por muitos projetos grandes
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 PASSO A PASSO:
+
+  1. Settings
+  2. Builds & deployments
+  3. Edit configurations
+  4. Build command: yarn install && yarn build
+  5. Save
+  6. Deployments
+  7. Retry deployment
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔥 ISSO DEVE RESOLVER O PROBLEMA!
+
+  Yarn é muito mais estável que npm para projetos complexos.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Data: 08/05/2026
+Status: ✅ PRONTO PARA DEPLOY COM YARN
+Commits: 12 correções aplicadas
