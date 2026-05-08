@@ -1,15 +1,9 @@
 {
-  "buildCommand": "npm install --legacy-peer-deps && npm run build && cp public/index.html dist/client/index.html",
+  "buildCommand": "npm install --legacy-peer-deps && npm run build && node scripts/generate-index.js",
   "framework": null,
   "installCommand": "npm install --legacy-peer-deps",
   "outputDirectory": "dist/client",
   "env": {
     "NODE_VERSION": "18"
-  },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+  }
 }
