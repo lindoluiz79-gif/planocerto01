@@ -5,5 +5,11 @@
   "outputDirectory": "dist/client",
   "env": {
     "NODE_VERSION": "18"
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
