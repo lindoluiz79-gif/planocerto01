@@ -35,3 +35,6 @@ dist-ssr
 
 # Ignore PlanoCerto01 directory (submodule issue)
 PlanoCerto01/
+
+# Package lock (let Cloudflare generate fresh)
+package-lock.json
