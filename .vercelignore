@@ -1,0 +1,26 @@
+# Ignore development files
+.git
+.github
+.vscode
+node_modules
+.env.example
+*.md
+*.txt
+
+# Ignore build artifacts
+dist
+.output
+.vercel
+.wrangler
+.tanstack
+
+# Ignore test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Ignore documentation
+CHANGELOG.md
+README.md
+*.log
